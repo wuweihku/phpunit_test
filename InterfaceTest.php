@@ -51,9 +51,9 @@ class InterfaceTest extends PHPUnit_Framework_TestCase  //测试类以***Test命
 	*数据供给器方法，必须为public
 	*/
 	public function csvProvider()
-    {
-        return new CsvFileIterator('csv/server_interface_data.csv');
-    }
+	{
+		return new CsvFileIterator('csv/server_interface_data.csv');
+	}
 
 	protected function tearDown()
 	{

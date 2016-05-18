@@ -1,4 +1,7 @@
 <?php
+/**
+ *这个类用于生成迭代器对象，读取csv/**.csv文件的每一行数据
+ */
 class CsvFileIterator implements Iterator {
     protected $file;
     protected $key = 0;

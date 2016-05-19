@@ -1,111 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="InterfaceTest" file="/home/phpunit_test/InterfaceTest.php" tests="15" assertions="15" failures="15" errors="0" time="2.458568">
-    <testsuite name="InterfaceTest::testListAll" tests="15" assertions="15" failures="15" errors="0" time="2.458568">
-      <testcase name="testListAll with data set #0" assertions="1" time="0.643392">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #0 ('comments', 'appid', 'channel', 'appkey', 'expected')
-Failed asserting that null matches expected 'expected'.
+  <testsuite name="InterfaceTest" file="/home/phpunit_test/InterfaceTest.php" tests="3" assertions="3" failures="1" errors="0" time="1.105969">
+    <testsuite name="InterfaceTest::testListAll" tests="3" assertions="3" failures="1" errors="0" time="1.105969">
+      <testcase name="testListAll with data set #0" assertions="1" time="0.655944">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #0 ('delUser', 'aofei', '1', '1', '1', '15692005742', '0')
+Failed asserting that 1 matches expected '0'.
 
-/home/phpunit_test/InterfaceTest.php:46
+/home/phpunit_test/InterfaceTest.php:56
 </failure>
+        <system-out>Array
+(
+    [result] =&gt; 1
+    [code] =&gt; 1
+    [msg] =&gt; 删除成功
+    [data] =&gt; Array
+        (
+        )
+
+)
+</system-out>
       </testcase>
-      <testcase name="testListAll with data set #1" assertions="1" time="0.135754">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #1 ('枪炮_后台测试', '2015121501', '100', '3d2yHsOyi5QjgpijeamIreX74f7VgUhi4c', '12000')
-Failed asserting that null matches expected '12000'.
+      <testcase name="testListAll with data set #1" assertions="1" time="0.217325">
+        <system-out>Array
+(
+    [result] =&gt; 0
+    [code] =&gt; 0
+    [msg] =&gt; 帐号不存在
+    [data] =&gt; Array
+        (
+        )
 
-/home/phpunit_test/InterfaceTest.php:46
-</failure>
+)
+</system-out>
       </testcase>
-      <testcase name="testListAll with data set #2" assertions="1" time="0.128767">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #2 ('sign值错误', '2015121501', '100', '3d2yHsOyi5QjgpijeamIreX84f7VgUhi4c', '12002')
-Failed asserting that null matches expected '12002'.
+      <testcase name="testListAll with data set #2" assertions="1" time="0.232700">
+        <system-out>Array
+(
+    [result] =&gt; 0
+    [code] =&gt; 0
+    [msg] =&gt; 帐号不存在
+    [data] =&gt; Array
+        (
+        )
 
-/home/phpunit_test/InterfaceTest.php:46
-</failure>
-      </testcase>
-      <testcase name="testListAll with data set #3" assertions="1" time="0.127571">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #3 ('sign值错误', '2015121501', '100', '3d2yHsOyi5QjgpijeamIreX74sf7VgUhi4c', '12002')
-Failed asserting that null matches expected '12002'.
-
-/home/phpunit_test/InterfaceTest.php:46
-</failure>
-      </testcase>
-      <testcase name="testListAll with data set #4" assertions="1" time="0.133526">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #4 ('sign值错误', '2015121501', '100', '3d2yHsOyi5QjgpijeIreX74sf7VgUhi4c', '12002')
-Failed asserting that null matches expected '12002'.
-
-/home/phpunit_test/InterfaceTest.php:46
-</failure>
-      </testcase>
-      <testcase name="testListAll with data set #5" assertions="1" time="0.134511">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #5 ('sign值错误', '2015121501', '100', '3d2yHsOyi5QjgpijeamIreX74fsda...gUhi4c', '12002')
-Failed asserting that null matches expected '12002'.
-
-/home/phpunit_test/InterfaceTest.php:46
-</failure>
-      </testcase>
-      <testcase name="testListAll with data set #6" assertions="1" time="0.122277">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #6 ('sign值错误', '2015121501', '100', '3d2yHsOyi5QjgpijeamIUhi4c', '12002')
-Failed asserting that null matches expected '12002'.
-
-/home/phpunit_test/InterfaceTest.php:46
-</failure>
-      </testcase>
-      <testcase name="testListAll with data set #7" assertions="1" time="0.126237">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #7 ('缺少参数', '2015121501', '', '3d2yHsOyi5QjgpijeamIreX74f7VgUhi4c', '12001')
-Failed asserting that null matches expected '12001'.
-
-/home/phpunit_test/InterfaceTest.php:46
-</failure>
-      </testcase>
-      <testcase name="testListAll with data set #8" assertions="1" time="0.132445">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #8 ('缺少参数', '', '100', '3d2yHsOyi5QjgpijeamIreX74f7VgUhi4c', '12001')
-Failed asserting that null matches expected '12001'.
-
-/home/phpunit_test/InterfaceTest.php:46
-</failure>
-      </testcase>
-      <testcase name="testListAll with data set #9" assertions="1" time="0.131597">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #9 ('缺少参数', '', '100', '3d2yHsOyi5QjgpijeamIreX74f7VgUhi4c', '12001')
-Failed asserting that null matches expected '12001'.
-
-/home/phpunit_test/InterfaceTest.php:46
-</failure>
-      </testcase>
-      <testcase name="testListAll with data set #10" assertions="1" time="0.127391">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #10 ('缺少参数', '2015121501', '100', '', '12001')
-Failed asserting that null matches expected '12001'.
-
-/home/phpunit_test/InterfaceTest.php:46
-</failure>
-      </testcase>
-      <testcase name="testListAll with data set #11" assertions="1" time="0.144108">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #11 ('枪炮_卓游测试（内部）', '2015121501', '1001', '3d2yHsOyi5QjgpijeamIreX74f7VgUhi4c', '12000')
-Failed asserting that null matches expected '12000'.
-
-/home/phpunit_test/InterfaceTest.php:46
-</failure>
-      </testcase>
-      <testcase name="testListAll with data set #12" assertions="1" time="0.122241">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #12 ('枪炮_后台测试', '2015121501', '100', '3d2yHsOyi5QjgpijeamIreX74f7VgUhi4c', '12000')
-Failed asserting that null matches expected '12000'.
-
-/home/phpunit_test/InterfaceTest.php:46
-</failure>
-      </testcase>
-      <testcase name="testListAll with data set #13" assertions="1" time="0.120201">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #13 ('枪炮_爱奇艺', '2015121501', '116', '3d2yHsOyi5QjgpijeamIreX74f7VgUhi4c', '12000')
-Failed asserting that null matches expected '12000'.
-
-/home/phpunit_test/InterfaceTest.php:46
-</failure>
-      </testcase>
-      <testcase name="testListAll with data set #14" assertions="1" time="0.128550">
-        <failure type="PHPUnit_Framework_ExpectationFailedException">InterfaceTest::testListAll with data set #14 ('水Q_爱奇艺', '1601250001', '116', '563edd21157e9d518efcf691536897c4a8', '12000')
-Failed asserting that null matches expected '12000'.
-
-/home/phpunit_test/InterfaceTest.php:46
-</failure>
+)
+</system-out>
       </testcase>
     </testsuite>
   </testsuite>

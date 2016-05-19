@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="InterfaceTest" file="/home/phpunit_test/InterfaceTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.990069">
+    <testsuite name="InterfaceTest::testListAll" tests="3" assertions="3" failures="0" errors="0" time="0.990069">
+      <testcase name="testListAll with data set #0" assertions="1" time="0.736901">
+        <system-out>Array
+(
+    [result] =&gt; 0
+    [code] =&gt; 0
+    [msg] =&gt; 帐号不存在
+    [data] =&gt; Array
+        (
+        )
+
+)
+</system-out>
+      </testcase>
+      <testcase name="testListAll with data set #1" assertions="1" time="0.126636">
+        <system-out>Array
+(
+    [result] =&gt; 0
+    [code] =&gt; 0
+    [msg] =&gt; 帐号不存在
+    [data] =&gt; Array
+        (
+        )
+
+)
+</system-out>
+      </testcase>
+      <testcase name="testListAll with data set #2" assertions="1" time="0.126532">
+        <system-out>Array
+(
+    [result] =&gt; 0
+    [code] =&gt; 0
+    [msg] =&gt; 帐号不存在
+    [data] =&gt; Array
+        (
+        )
+
+)
+</system-out>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testsuites>

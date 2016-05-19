@@ -15,7 +15,7 @@ require_once "selfdefine/CurlPost.php";  //curl_post方法类
 class InterfaceTest extends PHPUnit_Framework_TestCase  //测试类以***Test命名
 {
 
-	protected $url = "http://passportapi.15166.com/member-new?action=delUser&";  //请求的接口
+	protected $url = "http://passportapi.15166.com/member-new";  //请求的接口,要把凯华给的url里的？后的内容改写到数组中
 	protected $csv_file = "csv/Alpha_Passport_Account.csv";  //csv文件的路径
 	protected $info;  //csv每一行的测试数据，是一个数组	
 
@@ -30,7 +30,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase  //测试类以***Test命
 	 * 测试方法为public test***
 	 * 测试数据由csvProvider迭代器提供，一次一行数据
      */
-	public function testListAll($internal, $appId, $from, $signature, $username,$expected)  //按顺序，与csv首行字段一一对应
+	public function testListAll($action,$internal, $appId, $from, $signature, $username,$expected)  //按顺序，与csv首行字段一一对应
 	{
 		//$this->info为所要post的数组，接下来填充数组元素
 		/**需要md5校验的使用这段代码
@@ -41,7 +41,7 @@ class InterfaceTest extends PHPUnit_Framework_TestCase  //测试类以***Test命
 		*/
 
 		//不需要md5校验的使用这段代码
-		$this->info = array("internal"=>$internal,"appId"=>$appId,"from"=>$from,"signature"=>$signature,"username"=>$username);
+		$this->info = array("action"=>$action,"internal"=>$internal,"appId"=>$appId,"from"=>$from,"signature"=>$signature,"username"=>$username);
 
 		//postData（）函数处理post请求，第一个参数填写接口地址，第二个参数填写所传数组
 		$json_info = CurlPost::postData($this->url, $this->info);  
@@ -49,8 +49,11 @@ class InterfaceTest extends PHPUnit_Framework_TestCase  //测试类以***Test命
 		//将$josn_info解码为数组
 		$response = json_decode($json_info,true);     
 
+		print_r($response);
+
+
 		//第一个参数为$expected，第二个参数为$actual
-		$this->assertEquals($expected,$response["code"]); 
+		$this->assertEquals($expected,$response["result"]); 
         
 	}
 

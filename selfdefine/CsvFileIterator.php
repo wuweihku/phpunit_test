@@ -1,5 +1,6 @@
 <?php
 /**
+ *文件	CsvFileIterator.php
  *这个类用于生成迭代器对象，读取csv/**.csv文件的每一行数据
  */
 class CsvFileIterator implements Iterator {
@@ -15,25 +16,25 @@ class CsvFileIterator implements Iterator {
         fclose($this->file);
     }
 
-    public function rewind() {
+    public function rewind() {  //移到首元素
         rewind($this->file);
         $this->current = fgetcsv($this->file);
         $this->key = 0;
     }
 
-    public function valid() {
+    public function valid() {  //判定是否还有后续元素, 如果有, 返回true
         return !feof($this->file);
     }
 
-    public function key() {
+    public function key() {   //返回当前元素的键值
         return $this->key;
     }
 
-    public function current() {
-        return $this->current;
+    public function current() {  //返回当前元素值
+		 return $this->current;
     }
 
-    public function next() {
+    public function next() {  //下移一个元素
         $this->current = fgetcsv($this->file);
         $this->key++;
     }

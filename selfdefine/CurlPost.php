@@ -1,5 +1,6 @@
 <?php
 /**
+ *文件	CurlPost.php
  *这个类用于实现php下curl的post方法
  *参考文献：http://blog.csdn.net/jallin2001/article/details/6599052
  */

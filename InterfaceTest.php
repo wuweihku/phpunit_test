@@ -10,7 +10,7 @@ require_once "selfdefine/CsvFileIterator.php";  //csv文件流迭代器类
 require_once "selfdefine/CurlPost.php";  //curl_post方法类
 
  /**
-  * 用途       接口测试，用于运营后台，接收获取应用服务器的申请，返回申请的结果
+  * 用途       接口测试，删除指定帐号
   */
 class InterfaceTest extends PHPUnit_Framework_TestCase  //测试类以***Test命名
 {
